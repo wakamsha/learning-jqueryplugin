@@ -20,8 +20,8 @@
 	function Carousel(root, options) {
 		var self = this,
 			viewport = root.find('.viewport:first'),
-			content = root.find('.contents:first'),
-			pages = content.children(),
+			contents = root.find('.contents:first'),
+			pages = contents.children(),
 			btnNext = root.find('.next:first'),
 			btnPrev = root.find('.prev:first'),
 			pageSize = 0,
@@ -57,7 +57,7 @@
 		this.move  = function (direction) {
 			current += direction;
 			if(current > -1 && current < steps) {
-				content.animate({
+				contents.animate({
 					'left': -(current * pageSize)
 				}, options.duration, function() {
 					if(typeof options.callback === 'function') {
@@ -72,7 +72,7 @@
 			pages.width(viewport.width());
 			pageSize = $(pages[0]).outerWidth(true);
 			steps = pages.length;
-			content.css('width', (pageSize * pages.length));
+			contents.css('width', (pageSize * pages.length));
 			self.move(0);
 			setEvents();
 			return self;
