@@ -60,9 +60,9 @@
 				content.animate({
 					'left': -(current * pageSize)
 				}, options.duration, function() {
-				if(typeof options.callback === 'function') {
-					options.callback.call(this, pages[current], current);
-				}
+					if(typeof options.callback === 'function') {
+						options.callback.call(this, pages[current], current);
+					}
 				});
 				setTimer();
 			}
