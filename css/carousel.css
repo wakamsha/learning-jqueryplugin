@@ -1,0 +1,54 @@
+.carousel {
+  border: 1px solid #aaaaaa;
+  padding: 4px;
+  position: relative;
+}
+.carousel:before, .carousel:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.carousel:after {
+  clear: both;
+}
+.carousel .button {
+  border: 20px solid;
+  border-color: transparent;
+  display: block;
+  float: left;
+  font-size: 0;
+  height: 0;
+  line-height: 0%;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+.carousel .button.prev {
+  border-right-color: #aaa;
+  left: 0;
+}
+.carousel .button.next {
+  border-left-color: #aaa;
+  right: 0;
+}
+.carousel .viewport {
+  float: left;
+  height: 290px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.carousel .viewport .contents {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+.carousel .viewport .contents li {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.carousel .viewport .contents li img {
+  width: 100%;
+}

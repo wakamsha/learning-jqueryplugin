@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shake #2 | Learning jQuery plugin</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/shake.css" />
+</head>
+<body>
+
+	<div class="widget">
+		<h1>Shake <small>#2</small></h1>
+		<h2>内部用関数</h2>
+		<div id="square1" class="square">
+			<h3>#square1</h3>
+		</div>
+		<div id="square2" class="square">
+			<h3>#square2</h3>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.shake2.js"></script>
+<script>
+	$('.square').shake({
+		speed: 'fast'
+	});
+</script>
+</body>
+</html>

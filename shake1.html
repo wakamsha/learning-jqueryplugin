@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shake #1 | Learning jQuery plugin</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/shake.css" />
+</head>
+<body>
+
+	<div class="widget">
+		<h1>Shake <small>#1</small></h1>
+		<h2>要素をガクブルさせる</h2>
+		<div id="square1" class="square">
+			<h3>#square1</h3>
+		</div>
+		<div id="square2" class="square">
+			<h3>#square2</h3>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.shake1.js"></script>
+<script>
+	$('.square').shake({
+		speed: 'fast'
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shake #3 | jQuery plugin samples</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/shake.css" />
+</head>
+<body>
+
+	<div class="widget">
+		<h1>Shake <small>#3</small></h1>
+		<h2>独自データ属性</h2>
+		<div id="square1" class="square" data-shakes="4">
+			<h3>#square1</h3>
+			<span>shake x 4</span>
+		</div>
+		<div id="square2" class="square" data-shakes="10">
+			<h3>#square2</h3>
+			<span>shake x 10</span>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.shake3.js"></script>
+<script>
+	$('.square').shake({
+		speed: 'fast'
+	});
+</script>
+</body>
+</html>

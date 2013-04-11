@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Carousel | Learning jQuery plugin</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+
+	<div class="widget">
+		<h1>Carousel</h1>
+		<h2>画像ギャラリー</h2>
+		<div class="carousel">
+			<div class="viewport">
+				<ul class="contents">
+					<li><img src="img/img1.jpg" /></li>
+					<li><img src="img/img2.jpg" /></li>
+					<li><img src="img/img3.jpg" /></li>
+					<li><img src="img/img4.jpg" /></li>
+					<li><img src="img/img5.jpg" /></li>
+				</ul>
+			</div>
+			<a class="button prev" href="#">left</a>
+			<a class="button next" href="#">right</a>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.carousel.js"></script>
+<script>
+$(window).on('load', function() {
+	$('.carousel').carousel({
+		duration: 'fast',
+		interval: true
+	});
+});
+</script>
+</body>
+</html>

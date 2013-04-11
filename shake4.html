@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shake #4 | Learning jQuery plugin</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/shake.css" />
+</head>
+<body>
+
+	<div class="widget">
+		<h1>Shake <small>#4</small></h1>
+		<h2>静的関数</h2>
+		<div id="square1" class="square">
+			<h3>#square1</h3>
+			<span>yurayura</span>
+		</div>
+		<div id="square2" class="square">
+			<h3>#square2</h3>
+			<span>gakuburu</span>
+		</div>
+	</div>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery.shake4.js"></script>
+<script>
+	$.shake.yurayura($('.square:first'));
+	$.shake.gakuburu($('.square:last'));
+</script>
+</body>
+</html>
